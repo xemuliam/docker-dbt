@@ -4,7 +4,7 @@
 
 [Docker](https://www.docker.com/what-docker) image for [FishtownAnalytics DBT](https://www.getdbt.com/product/).
 
-![Docker builds](https://img.shields.io/docker/automated/xemuliam/dbt.svg) ![Docker Pulls](https://img.shields.io/docker/pulls/xemuliam/dbt.svg) ![Docker Stars](https://img.shields.io/docker/stars/xemuliam/dbt.svg)
+![Docker Cloud Automated build](https://shields.api-test.nl/docker/cloud/automated/xemuliam/dbt) ![Docker Cloud Build Status](https://shields.api-test.nl/docker/cloud/build/xemuliam/dbt) ![Docker Pulls](https://shields.api-test.nl/docker/pulls/xemuliam/dbt)
 
 
 ### Full
