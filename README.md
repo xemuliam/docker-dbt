@@ -8,15 +8,15 @@
 
 
 ### Full
-- ![Docker Image Version (tag latest semver)](https://img.shields.io/docker/v/xemuliam/dbt/0.19.1) ![Docker Image Size (tag)](https://shields.api-test.nl/docker/image-size/xemuliam/dbt/0.19.1)    __= 0.19 = latest__
-- ![Docker Image Version (tag latest semver)](https://img.shields.io/docker/v/xemuliam/dbt/0.18.2) ![Docker Image Size (tag)](https://shields.api-test.nl/docker/image-size/xemuliam/dbt/0.18.2)    __= 0.18__
+- ![Docker Image Version (tag latest semver)](https://img.shields.io/docker/v/xemuliam/dbt/0.19.1?color=red) ![Docker Image Size (tag)](https://shields.api-test.nl/docker/image-size/xemuliam/dbt/0.19.1?color=red)    __= 0.19 = latest__
+- ![Docker Image Version (tag latest semver)](https://img.shields.io/docker/v/xemuliam/dbt/0.18.2?color=red) ![Docker Image Size (tag)](https://shields.api-test.nl/docker/image-size/xemuliam/dbt/0.18.2?color=red)    __= 0.18__
 
 ### Spins
 - ![Docker Image Version (tag latest semver)](https://img.shields.io/docker/v/xemuliam/dbt/bigquery?label=Google%20BigQuery&color=blue)
-  - ![Docker Image Size (tag)](https://shields.api-test.nl/docker/image-size/xemuliam/dbt/bigquery)    __= bigquery__
-  - ![Docker Image Size (tag)](https://shields.api-test.nl/docker/image-size/xemuliam/dbt/bigquery-alpine)    __= bigquery-alpine__
-- ![Docker Image Version (tag latest semver)](https://img.shields.io/docker/v/xemuliam/dbt/snowflake?label=Snowflake&color=lightblue) ![Docker Image Size (tag)](https://shields.api-test.nl/docker/image-size/xemuliam/dbt/snowflake)   __= snowflake__
-- ![Docker Image Version (tag latest semver)](https://img.shields.io/docker/v/xemuliam/dbt/redshift?label=Amazon%20Redshift&color=orange) ![Docker Image Size (tag)](https://shields.api-test.nl/docker/image-size/xemuliam/dbt/redshift)   __= redshift__
+  - ![Docker Image Size (tag)](https://shields.api-test.nl/docker/image-size/xemuliam/dbt/bigquery?color=blue)    __= bigquery__
+  - ![Docker Image Size (tag)](https://shields.api-test.nl/docker/image-size/xemuliam/dbt/bigquery-alpine?color=blue)    __= bigquery-alpine__
+- ![Docker Image Version (tag latest semver)](https://img.shields.io/docker/v/xemuliam/dbt/snowflake?label=Snowflake&color=lightblue) ![Docker Image Size (tag)](https://shields.api-test.nl/docker/image-size/xemuliam/dbt/snowflake?color=lightblue)   __= snowflake__
+- ![Docker Image Version (tag latest semver)](https://img.shields.io/docker/v/xemuliam/dbt/redshift?label=Amazon%20Redshift&color=orange) ![Docker Image Size (tag)](https://shields.api-test.nl/docker/image-size/xemuliam/dbt/redshift?color=orange)   __= redshift__
 
 
 
