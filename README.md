@@ -2,10 +2,10 @@
 
 # DBT
 
-## 0.x
+## Full
 - ![Docker Image Version (tag latest semver)](https://img.shields.io/docker/v/xemuliam/dbt/latest)    __0.19 = latest__
 
-### Spins
+## Spins
 - ![Docker Image Version (tag latest semver)](https://img.shields.io/docker/v/xemuliam/dbt/bigquery?label=Google%20BigQuery&color=blue)   __bigquery__
 - ![Docker Image Version (tag latest semver)](https://img.shields.io/docker/v/xemuliam/dbt/snowflake?label=Snowflake&color=lightblue)   __snowflake__
 - ![Docker Image Version (tag latest semver)](https://img.shields.io/docker/v/xemuliam/dbt/redshift?label=Amazon%20Redshift&color=orange)   __redshift__
@@ -37,7 +37,7 @@ The main idea is to give possibility to work with DBT without unnesessary compon
 
 The image is more tiny than official one but provides the same functionality.
 
-# Spins
+## Spins
 DBT supports several plugins and full docker image contains all of them.
 
 However in most of cases we don't use such stuff because of technological lanscape in our work. Thus you don't need to work with unnecessary plugins and fuctionality.
