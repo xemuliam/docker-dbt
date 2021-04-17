@@ -7,9 +7,9 @@
 - ![Docker Image Version (tag latest semver)](https://img.shields.io/docker/v/xemuliam/dbt/0.18.2)    __= 0.18__
 
 ## Spins
-- ![Docker Image Version (tag latest semver)](https://img.shields.io/docker/v/xemuliam/dbt/bigquery?label=Google%20BigQuery&color=blue)   __bigquery__
-- ![Docker Image Version (tag latest semver)](https://img.shields.io/docker/v/xemuliam/dbt/snowflake?label=Snowflake&color=lightblue)   __snowflake__
-- ![Docker Image Version (tag latest semver)](https://img.shields.io/docker/v/xemuliam/dbt/redshift?label=Amazon%20Redshift&color=orange)   __redshift__
+- ![Docker Image Version (tag latest semver)](https://img.shields.io/docker/v/xemuliam/dbt/bigquery?label=Google%20BigQuery&color=blue)   __= bigquery__
+- ![Docker Image Version (tag latest semver)](https://img.shields.io/docker/v/xemuliam/dbt/snowflake?label=Snowflake&color=lightblue)   __= snowflake__
+- ![Docker Image Version (tag latest semver)](https://img.shields.io/docker/v/xemuliam/dbt/redshift?label=Amazon%20Redshift&color=orange)   __= edshift__
 
 
 [Docker](https://www.docker.com/what-docker) image for [FishtownAnalytics DBT](https://www.getdbt.com/product/).
