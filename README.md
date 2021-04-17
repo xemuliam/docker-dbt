@@ -3,7 +3,8 @@
 # DBT
 
 ## Full
-- ![Docker Image Version (tag latest semver)](https://img.shields.io/docker/v/xemuliam/dbt/latest)    __0.19 = latest__
+- ![Docker Image Version (tag latest semver)](https://img.shields.io/docker/v/xemuliam/dbt/0.19)    __= 0.19 = latest__
+- ![Docker Image Version (tag latest semver)](https://img.shields.io/docker/v/xemuliam/dbt/0.18)    __= 0.18__
 
 ## Spins
 - ![Docker Image Version (tag latest semver)](https://img.shields.io/docker/v/xemuliam/dbt/bigquery?label=Google%20BigQuery&color=blue)   __bigquery__
