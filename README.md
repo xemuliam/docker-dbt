@@ -53,9 +53,11 @@ I've additionaly prepared three spins dedicated to main cloud datawarehouses sup
 - [Amazon Redshift](https://aws.amazon.com/redshift)
 
 
-And those speens are very tiny!
+And those speens are really tiny!
 
-One spin I prepared especially to have the minimal size. It is based on [Alpine linux](https://alpinelinux.org) and contains Google BigQuery plugin only.
+__One spin__ I prepared especially to have the minimal size. It is based on [Alpine linux](https://alpinelinux.org) and contains Google BigQuery plugin only.
+
+![Docker Image Size (tag)](https://shields.api-test.nl/docker/image-size/fishtownanalytics/dbt/0.19.1?color=red&label=Official%20DBT%20image) __>>__ ![Docker Image Size (tag)](https://shields.api-test.nl/docker/image-size/xemuliam/dbt/bigquery-alpine?label=My%20Alpine-based%20image%20for%20BigQuery)
 
 Feel the difference :)
 
