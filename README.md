@@ -53,7 +53,7 @@ I've additionaly prepared three spins dedicated to main cloud datawarehouses sup
 - [Amazon Redshift](https://aws.amazon.com/redshift)
 
 
-And those speens are really tiny!
+And those spins are really tiny!
 
 __One spin__ I prepared especially to have the minimal size. It is based on [Alpine linux](https://alpinelinux.org) and contains Google BigQuery plugin only.
 
