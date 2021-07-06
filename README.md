@@ -8,7 +8,7 @@
 
 
 ### Full
-- ![Docker Image Version (tag latest semver)](https://img.shields.io/docker/v/xemuliam/dbt/0.19.1?color=red) ![Docker Image Size (tag)](https://shields.api-test.nl/docker/image-size/xemuliam/dbt/0.19.1?color=red)    __= 0.19 = latest__
+- ![Docker Image Version (tag latest semver)](https://img.shields.io/docker/v/xemuliam/dbt/0.19.2?color=red) ![Docker Image Size (tag)](https://shields.api-test.nl/docker/image-size/xemuliam/dbt/0.19.2?color=red)    __= 0.19 = latest__
 - ![Docker Image Version (tag latest semver)](https://img.shields.io/docker/v/xemuliam/dbt/0.18.2?color=red) ![Docker Image Size (tag)](https://shields.api-test.nl/docker/image-size/xemuliam/dbt/0.18.2?color=red)    __= 0.18__
 
 ### Spins
@@ -57,7 +57,7 @@ And those spins are really tiny!
 
 __One spin__ I prepared especially to have the minimal size. It is based on [Alpine linux](https://alpinelinux.org) and contains Google BigQuery plugin only.
 
-![Docker Image Size (tag)](https://shields.api-test.nl/docker/image-size/fishtownanalytics/dbt/0.19.1?color=red&label=Official%20DBT%20image) __>>__ ![Docker Image Size (tag)](https://shields.api-test.nl/docker/image-size/xemuliam/dbt/bigquery-alpine?label=My%20Alpine-based%20image%20for%20BigQuery)
+![Docker Image Size (tag)](https://shields.api-test.nl/docker/image-size/fishtownanalytics/dbt/0.19.2?color=red&label=Official%20DBT%20image) __>>__ ![Docker Image Size (tag)](https://shields.api-test.nl/docker/image-size/xemuliam/dbt/bigquery-alpine?label=My%20Alpine-based%20image%20for%20BigQuery)
 
 Feel the difference :)
 
@@ -76,10 +76,10 @@ All official documentation can be found on [DBT Docs](https://docs.getdbt.com/)
 You can build the image with desired plugins set and/or DBT version.
 
 Just grab Dockerfile and put desired version and/or plugins list as build parametes.
-If no parameters will be passed into the build then image will be built using full plugins set and version from ARD stetaement from Docker file.
+If no parameters will be passed into the build then image will be built using all plugins (BigQuery + Snowflake + Redshift + Postgres) and latest release version from [this page](https://github.com/dbt-labs/dbt/releases).
 
 Versionl list can be found in [DBT GitHub](https://github.com/fishtown-analytics/dbt/tags) repo.
 
-`docker build -t <YOUR-TAG>  --build-arg VERSION=<DESIRED.VERSION> --build-arg PLUGINS='bigquery redshift, snowflake'`
+`docker build -t <YOUR_TAG>  --build-arg VERSION=<DESIRED_VERSION> --build-arg PLUGINS='bigquery redshift, snowflake' <YOUR_DOCKER_FILE>`
 
 # Enjoy! :)
