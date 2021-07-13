@@ -4,19 +4,18 @@
 
 [Docker](https://www.docker.com/what-docker) image for [FishtownAnalytics DBT](https://www.getdbt.com/product/).
 
-![Docker Cloud Automated build](https://shields.api-test.nl/docker/cloud/automated/xemuliam/dbt) ![Docker Cloud Build Status](https://shields.api-test.nl/docker/cloud/build/xemuliam/dbt) ![Docker Pulls](https://shields.api-test.nl/docker/pulls/xemuliam/dbt)
+![Docker Cloud Automated build](https://img.shields.io/docker/cloud/automated/xemuliam/dbt) ![Docker Cloud Build Status](https://img.shields.io/docker/cloud/build/xemuliam/dbt) ![Docker Pulls](https://img.shields.io/docker/pulls/xemuliam/dbt)
 
 
 ### Full
-- ![Docker Image Version (tag latest semver)](https://img.shields.io/docker/v/xemuliam/dbt/0.19.2?color=red) ![Docker Image Size (tag)](https://shields.api-test.nl/docker/image-size/xemuliam/dbt/0.19.2?color=red)    __= 0.19 = latest__
-- ![Docker Image Version (tag latest semver)](https://img.shields.io/docker/v/xemuliam/dbt/0.18.2?color=red) ![Docker Image Size (tag)](https://shields.api-test.nl/docker/image-size/xemuliam/dbt/0.18.2?color=red)    __= 0.18__
+- ![Docker Image Version (tag latest semver)](https://img.shields.io/docker/v/xemuliam/dbt/latest?color=red) ![Docker Image Size (tag)](https://img.shields.io/docker/image-size/xemuliam/dbt/latest?color=red)   __= 0.20 = latest__
+- ![Docker Image Version (tag latest semver)](https://img.shields.io/docker/v/xemuliam/dbt/0.19?color=red) ![Docker Image Size (tag)](https://img.shields.io/docker/image-size/xemuliam/dbt/0.19?color=red)    __= 0.19__
+- ![Docker Image Version (tag latest semver)](https://img.shields.io/docker/v/xemuliam/dbt/0.18?color=red) ![Docker Image Size (tag)](https://img.shields.io/docker/image-size/xemuliam/dbt/0.18?color=red)    __= 0.18__
 
 ### Spins
-- ![Docker Image Version (tag latest semver)](https://img.shields.io/docker/v/xemuliam/dbt/bigquery?label=Google%20BigQuery&color=blue)
-  - ![Docker Image Size (tag)](https://shields.api-test.nl/docker/image-size/xemuliam/dbt/bigquery?color=blue)    __= bigquery__
-  - ![Docker Image Size (tag)](https://shields.api-test.nl/docker/image-size/xemuliam/dbt/bigquery-alpine?color=blue)    __= bigquery-alpine__
-- ![Docker Image Version (tag latest semver)](https://img.shields.io/docker/v/xemuliam/dbt/snowflake?label=Snowflake&color=lightblue) ![Docker Image Size (tag)](https://shields.api-test.nl/docker/image-size/xemuliam/dbt/snowflake?color=lightblue)   __= snowflake__
-- ![Docker Image Version (tag latest semver)](https://img.shields.io/docker/v/xemuliam/dbt/redshift?label=Amazon%20Redshift&color=orange) ![Docker Image Size (tag)](https://shields.api-test.nl/docker/image-size/xemuliam/dbt/redshift?color=orange)   __= redshift__
+- ![Docker Image Version (tag latest semver)](https://img.shields.io/docker/v/xemuliam/dbt/bigquery?label=Google%20BigQuery&color=blue) ![Docker Image Size (tag)](https://img.shields.io/docker/image-size/xemuliam/dbt/bigquery?color=blue)    __= 0.20-bigquery = bigquery__
+- ![Docker Image Version (tag latest semver)](https://img.shields.io/docker/v/xemuliam/dbt/snowflake?label=Snowflake&color=lightblue) ![Docker Image Size (tag)](https://img.shields.io/docker/image-size/xemuliam/dbt/snowflake?color=lightblue)   __= 0.20-snowflake = snowflake__
+- ![Docker Image Version (tag latest semver)](https://img.shields.io/docker/v/xemuliam/dbt/redshift?label=Amazon%20Redshift&color=orange) ![Docker Image Size (tag)](https://img.shields.io/docker/image-size/xemuliam/dbt/redshift?color=orange)   __= 0.20-redshift = redshift__
 
 
 
@@ -57,7 +56,7 @@ And those spins are really tiny!
 
 __One spin__ I prepared especially to have the minimal size. It is based on [Alpine linux](https://alpinelinux.org) and contains Google BigQuery plugin only.
 
-![Docker Image Size (tag)](https://shields.api-test.nl/docker/image-size/fishtownanalytics/dbt/0.19.2?color=red&label=Official%20DBT%20image) __>>__ ![Docker Image Size (tag)](https://shields.api-test.nl/docker/image-size/xemuliam/dbt/bigquery-alpine?label=My%20Alpine-based%20image%20for%20BigQuery)
+![Docker Image Version (tag)](https://img.shields.io/docker/v/fishtownanalytics/dbt/0.19.2?color=orange&label=Official%20DBT%20image) ![Docker Image Size (tag)](https://img.shields.io/docker/image-size/fishtownanalytics/dbt/0.19.2?color=red) __>>>__ ![Docker Image Version (tag latest semver)](https://img.shields.io/docker/v/xemuliam/dbt/bigquery-alpine?label=My%20Alpine-based%20image%20for%20BigQuery&color=blue) ![Docker Image Size (tag)](https://img.shields.io/docker/image-size/xemuliam/dbt/bigquery-alpine?color=green)
 
 Feel the difference :)
 
