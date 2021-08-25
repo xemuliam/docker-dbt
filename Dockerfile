@@ -3,7 +3,7 @@ ENV         DBT_HOME=/usr/app \
             PYTHONIOENCODING=utf-8
 
 FROM        base AS build
-ARG         DIST_MIRROR=https://github.com/fishtown-analytics/dbt/archive/refs/tags
+ARG         DIST_MIRROR=https://github.com/dbt-labs/dbt/archive/refs/tags
 ARG         VERSION=''
 ARG         PLUGINS=''
 RUN         apt update && \
