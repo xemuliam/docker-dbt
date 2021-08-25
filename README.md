@@ -2,7 +2,7 @@
 
 # DBT
 
-[Docker](https://www.docker.com/what-docker) image for [FishtownAnalytics DBT](https://www.getdbt.com/product/).
+[Docker](https://www.docker.com/what-docker) image for [DBT-labs (former FishtownAnalytics) data build tool (DBT)](https://www.getdbt.com/product/).
 
 ![Docker Cloud Automated build](https://img.shields.io/docker/cloud/automated/xemuliam/dbt) ![Docker Cloud Build Status](https://img.shields.io/docker/cloud/build/xemuliam/dbt) ![Docker Pulls](https://img.shields.io/docker/pulls/xemuliam/dbt)
 
@@ -74,10 +74,10 @@ All official documentation can be found on [DBT Docs](https://docs.getdbt.com/)
 
 You can build the image with desired plugins set and/or DBT version.
 
-Just grab Dockerfile and put desired version and/or plugins list as build parametes.
-If no parameters will be passed into the build then image will be built using all plugins (BigQuery + Snowflake + Redshift + Postgres) and latest release version from [this page](https://github.com/dbt-labs/dbt/releases).
+Just grab Dockerfile and build desired version and/or plugins list as build parametes.
+If no parameters will be passed into the build then image will be built using all official plugins (BigQuery + Snowflake + Redshift + Postgres) and latest release version from [this page](https://github.com/dbt-labs/dbt/releases).
 
-Versionl list can be found in [DBT GitHub](https://github.com/fishtown-analytics/dbt/tags) repo.
+Version list can be found on [DBT-labs GitHub](https://github.com/dbt-labs/dbt/tags) repo.
 
 `docker build -t <YOUR_TAG>  --build-arg VERSION=<DESIRED_VERSION> --build-arg PLUGINS='bigquery redshift, snowflake' <YOUR_DOCKER_FILE>`
 
