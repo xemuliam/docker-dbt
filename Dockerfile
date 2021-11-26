@@ -3,7 +3,7 @@ ENV         DBT_HOME=/usr/app \
             PYTHONIOENCODING=utf-8
 
 FROM        base AS build
-ARG         DIST_MIRROR=https://github.com/dbt-labs/dbt/archive/refs/tags
+ARG         DIST_MIRROR=https://github.com/dbt-labs/dbt-core/archive/refs/tags
 ARG         VERSION=''
 ARG         PLUGINS=''
 RUN         apt update && \
@@ -15,11 +15,11 @@ RUN         apt update && \
                 curl && \
             pip install --no-cache-dir --upgrade pip setuptools wheel && \
             mkdir -p ${DBT_HOME} && \
-            if [ -z "$VERSION" ]; then VERSION=$(curl -s \
-              https://api.github.com/repos/dbt-labs/dbt/releases/latest | grep tag_name | \
+            if [ -z "$VERSION" ]; then VERSION=$(curl -s -L \
+              https://api.github.com/repos/dbt-labs/dbt-core/releases/latest | grep tag_name | \
               tr -d ' ' | cut -d: -f 2,3 | tr -d \" | tr -d , | tr -d v); fi && \
             curl -L ${DIST_MIRROR}/v${VERSION}.tar.gz | tar xvz -C ${DBT_HOME} && \
-            mv ${DBT_HOME}/dbt-${VERSION}/* ${DBT_HOME} && \
+            mv ${DBT_HOME}/dbt-core-${VERSION}/* ${DBT_HOME} && \
             rm -f *.tar.gz && rm -rf ${DBT_HOME}/dbt-${VERSION} && \
             cd ${DBT_HOME} && \
             if [ ! -z "$PLUGINS" ]; then sed -i '/'$( \
