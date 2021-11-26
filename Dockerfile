@@ -15,7 +15,7 @@ RUN         apt update && \
                 curl && \
             pip install --no-cache-dir --upgrade pip setuptools wheel && \
             mkdir -p ${DBT_HOME} && \
-            if [ -z "$VERSION" ]; then VERSION=$(curl -s -L \
+            if [ -z "$VERSION" ]; then VERSION=$(curl -sL \
               https://api.github.com/repos/dbt-labs/dbt-core/releases/latest | grep tag_name | \
               tr -d ' ' | cut -d: -f 2,3 | tr -d \" | tr -d , | tr -d v); fi && \
             curl -L ${DIST_MIRROR}/v${VERSION}.tar.gz | tar xvz -C ${DBT_HOME} && \
