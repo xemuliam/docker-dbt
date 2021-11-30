@@ -19,6 +19,7 @@
 - ![Docker Image Version (tag latest semver)](https://img.shields.io/docker/v/xemuliam/dbt/redshift?label=Redshift&color=orange) ![Docker Image Size (tag)](https://img.shields.io/docker/image-size/xemuliam/dbt/redshift?color=orange)   __= 0.21-redshift = redshift__
 
 
+More images you can find on [tags page](hub.docker.com/r/xemuliam/dbt/tags?ordering=last_updated)
 
 ```
  ___________
@@ -76,7 +77,7 @@ All official documentation can be found on [DBT Docs](https://docs.getdbt.com/)
 You can build the image with desired plugins set and/or DBT version.
 
 Just grab Dockerfile and build desired version and/or plugins list as build parametes.
-If no parameters will be passed into the build then image will be built using all official plugins (BigQuery + Snowflake + Redshift + Postgres) and latest release version from [this page](https://github.com/dbt-labs/dbt/releases).
+If no parameters will be passed into the build then image will be built using all official plugins (BigQuery + Snowflake + Redshift + Postgres) and latest release version from [this page](https://github.com/dbt-labs/dbt-core/releases/latest).
 
 Version list can be found on [DBT-labs GitHub](https://github.com/dbt-labs/dbt/tags) repo.
 
