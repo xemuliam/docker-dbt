@@ -19,7 +19,7 @@
 - ![Docker Image Version (tag latest semver)](https://img.shields.io/docker/v/xemuliam/dbt/redshift?label=Redshift&color=orange) ![Docker Image Size (tag)](https://img.shields.io/docker/image-size/xemuliam/dbt/redshift?color=orange)   __= 0.21-redshift = redshift__
 
 
-More images you can find on [tags page](hub.docker.com/r/xemuliam/dbt/tags?ordering=last_updated)
+More images you can find on [tags page](https://hub.docker.com/r/xemuliam/dbt/tags?ordering=last_updated)
 
 ```
  ___________
