@@ -8,7 +8,7 @@
 
 
 ### Full
-- ![Docker Image Version (tag latest semver)](https://img.shields.io/docker/v/xemuliam/dbt/latest?color=green) ![Docker Image Size (tag)](https://img.shields.io/docker/image-size/xemuliam/dbt/latest?color=red)   __= 0.21 = latest__
+- ![Docker Image Version (tag latest semver)](https://img.shields.io/docker/v/xemuliam/dbt/latest?color=darkgreen) ![Docker Image Size (tag)](https://img.shields.io/docker/image-size/xemuliam/dbt/latest?color=darkgreen)   __= 0.21 = latest__
 - ![Docker Image Version (tag latest semver)](https://img.shields.io/docker/v/xemuliam/dbt/0.20?color=red) ![Docker Image Size (tag)](https://img.shields.io/docker/image-size/xemuliam/dbt/0.20?color=red)    __= 0.20__
 - ![Docker Image Version (tag latest semver)](https://img.shields.io/docker/v/xemuliam/dbt/0.19?color=red) ![Docker Image Size (tag)](https://img.shields.io/docker/image-size/xemuliam/dbt/0.19?color=red)    __= 0.19__
 - ![Docker Image Version (tag latest semver)](https://img.shields.io/docker/v/xemuliam/dbt/0.18?color=red) ![Docker Image Size (tag)](https://img.shields.io/docker/image-size/xemuliam/dbt/0.18?color=red)    __= 0.18__
