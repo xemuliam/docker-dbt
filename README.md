@@ -91,6 +91,7 @@ If no parameters will be passed into the build then image will be built using al
 Version list can be found on [DBT-labs GitHub](https://github.com/dbt-labs/dbt-core/tags) repo.
 
 Plugins list can be found in [DBT documentation](https://docs.getdbt.com/docs/available-adapters) site.
+Please use plugin name without `dbt-` prefix to pass is an a build argument
 
 ## Important notice
 To avoid auto-downgrading of DBT-core version during outdated plugin installation, I've added strict condition that plugin's bersion must be equal to DBT-core version.
