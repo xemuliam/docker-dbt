@@ -6,17 +6,18 @@
 
 ![Docker Cloud Automated build](https://img.shields.io/docker/cloud/automated/xemuliam/dbt) ![Docker Cloud Build Status](https://img.shields.io/docker/cloud/build/xemuliam/dbt) ![Docker Pulls](https://img.shields.io/docker/pulls/xemuliam/dbt)
 
-#### Since version 1.0.0 my images are optimized for two different architectures: amd64 and arm64. Last one is really helpful for running on Apple M1 machines.
+## Important notice
+Since version 1.0.0 my images are optimized for two different architectures: **AMD 64** and **ARM 64**. Last one is really helpful for running on [Apple M1](https://en.wikipedia.org/wiki/Apple_M1) machines.
 
 
-### Full
+## Full
 - ![Docker Image Version (tag latest semver)](https://img.shields.io/docker/v/xemuliam/dbt/latest?color=brightgreen) ![Docker Image Size (tag)](https://img.shields.io/docker/image-size/xemuliam/dbt/latest?color=brightgreen)   __= 1.0 = latest__
 - ![Docker Image Version (tag latest semver)](https://img.shields.io/docker/v/xemuliam/dbt/0.21?color=orange) ![Docker Image Size (tag)](https://img.shields.io/docker/image-size/xemuliam/dbt/0.21?color=orange)    __= 0.21__
 - ![Docker Image Version (tag latest semver)](https://img.shields.io/docker/v/xemuliam/dbt/0.20?color=red) ![Docker Image Size (tag)](https://img.shields.io/docker/image-size/xemuliam/dbt/0.20?color=red)    __= 0.20__
 - ![Docker Image Version (tag latest semver)](https://img.shields.io/docker/v/xemuliam/dbt/0.19?color=red) ![Docker Image Size (tag)](https://img.shields.io/docker/image-size/xemuliam/dbt/0.19?color=red)    __= 0.19__
 - ![Docker Image Version (tag latest semver)](https://img.shields.io/docker/v/xemuliam/dbt/0.18?color=red) ![Docker Image Size (tag)](https://img.shields.io/docker/image-size/xemuliam/dbt/0.18?color=red)    __= 0.18__
 
-### Spins
+## Spins
 - ![Docker Image Version (tag latest semver)](https://img.shields.io/docker/v/xemuliam/dbt/bigquery?label=BigQuery&color=blue) ![Docker Image Size (tag)](https://img.shields.io/docker/image-size/xemuliam/dbt/bigquery?color=blue)    __= 1.0-bigquery = bigquery__
 - ![Docker Image Version (tag latest semver)](https://img.shields.io/docker/v/xemuliam/dbt/snowflake?label=Snowflake&color=lightblue) ![Docker Image Size (tag)](https://img.shields.io/docker/image-size/xemuliam/dbt/snowflake?color=lightblue)   __= 1.0-snowflake = snowflake__
 - ![Docker Image Version (tag latest semver)](https://img.shields.io/docker/v/xemuliam/dbt/redshift?label=Redshift&color=orange) ![Docker Image Size (tag)](https://img.shields.io/docker/image-size/xemuliam/dbt/redshift?color=orange)   __= 1.0-redshift = redshift__
@@ -79,11 +80,20 @@ All official documentation can be found on [DBT Docs](https://docs.getdbt.com/)
 
 You can build the image with desired plugins set and/or DBT version.
 
+`docker build -t <YOUR_TAG>  --build-arg VERSION=<DESIRED_VERSION> --build-arg PLUGINS='bigquery redshift, snowflake' <YOUR_DOCKER_FILE>`
+
 Just grab Dockerfile and build desired version and/or plugins list as build parametes.
 If no parameters will be passed into the build then image will be built using all official plugins (BigQuery + Snowflake + Redshift + Postgres) and latest release version from [this page](https://github.com/dbt-labs/dbt-core/releases/latest).
 
-Version list can be found on [DBT-labs GitHub](https://github.com/dbt-labs/dbt/tags) repo.
+**Since version 1.0.0 the DBT core only will be put into image if no parameter passed as build argumets.**
 
-`docker build -t <YOUR_TAG>  --build-arg VERSION=<DESIRED_VERSION> --build-arg PLUGINS='bigquery redshift, snowflake' <YOUR_DOCKER_FILE>`
+
+Version list can be found on [DBT-labs GitHub](https://github.com/dbt-labs/dbt-core/tags) repo.
+
+Plugins list can be found in [DBT documentation](https://docs.getdbt.com/docs/available-adapters) site.
+
+## Important notice
+To avoid auto-downgrading of DBT-core version during outdated plugin installation, I've added strict condition that plugin's bersion must be equal to DBT-core version.
+
 
 # Enjoy! :)
