@@ -6,6 +6,8 @@
 
 ![Docker Cloud Automated build](https://img.shields.io/docker/cloud/automated/xemuliam/dbt) ![Docker Cloud Build Status](https://img.shields.io/docker/cloud/build/xemuliam/dbt) ![Docker Pulls](https://img.shields.io/docker/pulls/xemuliam/dbt)
 
+#### Since version 1.0.0 my images are optimized for two different architectures: amd64 and arm64. Last one is really helpful for running on Apple M1 machines.
+
 
 ### Full
 - ![Docker Image Version (tag latest semver)](https://img.shields.io/docker/v/xemuliam/dbt/latest?color=brightgreen) ![Docker Image Size (tag)](https://img.shields.io/docker/image-size/xemuliam/dbt/latest?color=brightgreen)   __= 1.0 = latest__
