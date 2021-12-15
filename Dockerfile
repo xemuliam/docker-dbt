@@ -1,4 +1,4 @@
-FROM        python:3.9-slim AS base
+FROM        python:3.9-slim-buster AS base
 ENV         DBT_HOME=/usr/app \
             PYTHONIOENCODING=utf-8
 
@@ -6,8 +6,8 @@ FROM        base AS build
 ARG         DIST_MIRROR=https://github.com/dbt-labs/dbt-core/archive/refs/tags
 ARG         VERSION=''
 ARG         PLUGINS=''
-RUN         apt update && \
-            apt install -y --no-install-recommends \
+RUN         apt-get update && \
+            apt-get install -y --no-install-recommends \
                 software-properties-common \
                 make \
                 build-essential \
