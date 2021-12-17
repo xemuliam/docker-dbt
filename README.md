@@ -82,26 +82,22 @@ You can build the image with desired plugins set and/or DBT version.
 
 `docker build -t <YOUR_TAG>  --build-arg VERSION=<DESIRED_VERSION> --build-arg PLUGINS='bigquery redshift, snowflake' <YOUR_DOCKER_FILE>`
 
-Just grab Dockerfile and build desired version and/or plugins list as build parametes.
-If no parameters will be passed into the build then image will be built using latest release version from [this page](https://github.com/dbt-labs/dbt-core/releases/latest) and following components:
-- up to 0.21.1 - DBT core + BigQuery + Snowflake + Redshift + Postgres
-- since 1.0.0  - DBT core only
-
 ### Image building examples
 
 - `docker build -t myorg/dbt:bigquery --build-arg PLUGINS=bigquery - < ~/Projects/Docker/dbt/Dockerfile.multistage.universal`
 
 - `docker build -t myogr/dbt:0.21 --build-arg VERSION='0.21.1' --build-arg PLUGINS='bigquery snowflake,redshift' - < ~/Projects/Docker/dbt/Dockerfile.multistage.universal`
 
-
-
-**Since version 1.0.0 the DBT core only will be put into image if no parameter passed as build argumets.**
+Just grab Dockerfile and build desired version and/or plugins list as build parametes.
+If no parameters will be passed into the build then image will be built using latest release version from [this page](https://github.com/dbt-labs/dbt-core/releases/latest) and following components:
+- DBT version before 1.0.0 - DBT core + BigQuery + Snowflake + Redshift + Postgres
+- DBT version 1.0.0 and  after - DBT core only
 
 
 Version list can be found on [DBT-labs GitHub](https://github.com/dbt-labs/dbt-core/tags) repo.
 
 Plugins list can be found in [DBT documentation](https://docs.getdbt.com/docs/available-adapters) site.
-Please use plugin name without `dbt-` prefix to pass it as a build argument
+Please use plugin name from **Install from PyPi** section (without `dbt-` prefix) to pass it as a build argument
 
 ## Important notice
 To avoid auto-downgrading of DBT-core version during outdated plugin installation, I've added strict condition that plugin's version must be equal to version of DBT-core.
