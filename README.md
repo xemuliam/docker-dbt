@@ -83,7 +83,9 @@ You can build the image with desired plugins set and/or DBT version.
 `docker build -t <YOUR_TAG>  --build-arg VERSION=<DESIRED_VERSION> --build-arg PLUGINS='bigquery redshift, snowflake' <YOUR_DOCKER_FILE>`
 
 Just grab Dockerfile and build desired version and/or plugins list as build parametes.
-If no parameters will be passed into the build then image will be built using all official plugins (BigQuery + Snowflake + Redshift + Postgres) and latest release version from [this page](https://github.com/dbt-labs/dbt-core/releases/latest).
+If no parameters will be passed into the build then image will be built using latest release version from [this page](https://github.com/dbt-labs/dbt-core/releases/latest) and following components:
+- up to 0.21.1 - DBT core + BigQuery + Snowflake + Redshift + Postgres
+- since 1.0.0  - DBT core only
 
 ### Image building examples
 
