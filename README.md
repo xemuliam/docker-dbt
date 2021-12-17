@@ -85,6 +85,14 @@ You can build the image with desired plugins set and/or DBT version.
 Just grab Dockerfile and build desired version and/or plugins list as build parametes.
 If no parameters will be passed into the build then image will be built using all official plugins (BigQuery + Snowflake + Redshift + Postgres) and latest release version from [this page](https://github.com/dbt-labs/dbt-core/releases/latest).
 
+### Image building examples
+
+- `docker build -t myorg/dbt:bigquery --build-arg PLUGINS=bigquery - < ~/Projects/Docker/dbt/Dockerfile.multistage.universal`
+
+- `docker build -t myogr/dbt:0.21 --build-arg VERSION='0.21.1' --build-arg PLUGINS='bigquery snowflake,redshift' - < ~/Projects/Docker/dbt/Dockerfile.multistage.universal`
+
+
+
 **Since version 1.0.0 the DBT core only will be put into image if no parameter passed as build argumets.**
 
 
