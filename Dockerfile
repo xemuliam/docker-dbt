@@ -27,7 +27,8 @@ RUN         apt-get update && \
             rm -f *.tar.gz && rm -rf ${DBT_HOME}/dbt-${VERSION} && \
             cd ${DBT_HOME} && \
             > plugins.txt && \
-            for PLUGIN in $(echo 'core '${PLUGINS} | \
+            echo dbt-core'=='${VERSION} >> plugins.txt && \
+            for PLUGIN in $(echo ${PLUGINS} | \
               sed -e 's/\s/,/g' -e 's/\(,\)*/\1/g' -e 's/,/ /g'); do \
               echo dbt-${PLUGIN}'>='$(echo $VERSION | cut -d. -f 1,2) >> plugins.txt; done && \
             pip wheel --wheel-dir ${DBT_HOME}/wheels \
