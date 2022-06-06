@@ -1,4 +1,4 @@
-FROM        python:3.9-slim AS base
+FROM        python:slim AS base
 ENV         DBT_HOME=/usr/app \
             PYTHONIOENCODING=utf-8
 
