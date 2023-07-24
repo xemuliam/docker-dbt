@@ -30,7 +30,8 @@ RUN         apt-get update && \
             echo dbt-core'=='${VERSION} >> plugins.txt && \
             for PLUGIN in $(echo ${PLUGINS} | \
               sed -e 's/\s/,/g' -e 's/\(,\)*/\1/g' -e 's/,/ /g'); do \
-              echo dbt-${PLUGIN}'>='$(echo $VERSION | cut -d. -f 1,2)',<='${VERSION} >> plugins.txt; done && \
+              echo dbt-${PLUGIN}'>='$(echo $VERSION | cut -d. -f 1,2)',<'$(echo $VERSION | cut -d. -f 1)'.'"$(($(echo $VERSION | cut -d. -f 2) + 1))" >> plugins.txt; \
+            done && \
             pip wheel --wheel-dir ${DBT_HOME}/wheels \
               --find-links ${DBT_HOME}/wheels \
               --requirement plugins.txt
