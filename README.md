@@ -9,7 +9,10 @@
 ## Important notice
 Since version 1.0.0 my images are optimized for two different architectures: **AMD 64** and **ARM 64**. Last one is really helpful for running on [Apple M1](https://en.wikipedia.org/wiki/Apple_M1) machines.
 
-Also please be informed that **since DBT version 1.7.8, the tagging for my images have been changed**
+========
+
+Also please be informed that **since DBT version 1.7.8, the tagging for my images have been changed**.
+
 Now the fully qualified tag looks like this:
 ```
 xemuliam/dbt:1.7.8-bigquery1.7.5
