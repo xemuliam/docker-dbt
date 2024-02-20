@@ -9,7 +9,18 @@
 ## Important notice
 Since version 1.0.0 my images are optimized for two different architectures: **AMD 64** and **ARM 64**. Last one is really helpful for running on [Apple M1](https://en.wikipedia.org/wiki/Apple_M1) machines.
 
-## Latest Spins based on ![DBT-Core version](https://img.shields.io/badge/dbt--core-v1.7.7-purple)
+Also please be informed that **since DBT version 1.7.8, the tagging for my images have been changed**
+Now the fully qualified tag looks like this:
+```
+xemuliam/dbt:1.7.8-bigquery1.7.5
+             -----         -----
+               |             |
+           dbt-core      dbt-bigquery
+```
+Please take that into account to avoid any misleading
+
+
+## Latest Spins
 
 - ![Docker Image Version (tag latest semver)](https://img.shields.io/docker/v/xemuliam/dbt/bigquery?label=BigQuery&color=blue) ![Docker Image Size (tag)](https://img.shields.io/docker/image-size/xemuliam/dbt/bigquery?color=blue)    __= 1.7-bigquery = bigquery__
 - ![Docker Image Version (tag latest semver)](https://img.shields.io/docker/v/xemuliam/dbt/snowflake?label=Snowflake&color=lightblue) ![Docker Image Size (tag)](https://img.shields.io/docker/image-size/xemuliam/dbt/snowflake?color=lightblue)   __= 1.7-snowflake = snowflake__
