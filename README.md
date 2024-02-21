@@ -104,7 +104,7 @@ All official documentation can be found on [DBT Docs](https://docs.getdbt.com/)
 
 # How to build with particular version and/or plugins set
 
-Look into ![build script](https://github.com/xemuliam/docker-dbt/blob/main/buildx.sh)
+Look into [build script](https://github.com/xemuliam/docker-dbt/blob/main/buildx.sh)
 
 
 # Enjoy! :)
