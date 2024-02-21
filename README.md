@@ -35,7 +35,7 @@ Please take that into account to avoid any misleading
 
 __I decided to stop maintaining full version of image because of version mixing for each of plugins__
 
-- ![Docker Image Version (tag latest semver)](https://img.shields.io/docker/v/xemuliam/dbt/latest?color=brightgreen) ![Docker Image Size (tag)](https://img.shields.io/docker/image-size/xemuliam/dbt/latest?color=brightgreen)   __= 1.6 = latest__
+- ![Docker Image Version (tag latest semver)](https://img.shields.io/docker/v/xemuliam/dbt/latest?color=brightgreen) ![Docker Image Size (tag)](https://img.shields.io/docker/image-size/xemuliam/dbt/latest?color=brightgreen)   __= 1.6__
 - ![Docker Image Version (tag latest semver)](https://img.shields.io/docker/v/xemuliam/dbt/1.5?color=yellowgreen) ![Docker Image Size (tag)](https://img.shields.io/docker/image-size/xemuliam/dbt/1.5?color=yellowgreen)   __= 1.5__
 - ![Docker Image Version (tag latest semver)](https://img.shields.io/docker/v/xemuliam/dbt/1.4?color=yellow) ![Docker Image Size (tag)](https://img.shields.io/docker/image-size/xemuliam/dbt/1.4?color=yellow)   __= 1.4__
 - ![Docker Image Version (tag latest semver)](https://img.shields.io/docker/v/xemuliam/dbt/1.3?color=orange) ![Docker Image Size (tag)](https://img.shields.io/docker/image-size/xemuliam/dbt/1.3?color=orange)    __= 1.3__
@@ -104,29 +104,7 @@ All official documentation can be found on [DBT Docs](https://docs.getdbt.com/)
 
 # How to build with particular version and/or plugins set
 
-You can build the image with desired plugins set and/or DBT version.
-
-`docker build -t <YOUR_TAG>  --build-arg VERSION=<DESIRED_VERSION> --build-arg PLUGINS='bigquery redshift, snowflake' <YOUR_DOCKER_FILE>`
-
-### Image building examples
-
-- `docker build -t myorg/dbt:bigquery --build-arg PLUGINS=bigquery - < ~/Projects/Docker/dbt/Dockerfile.multistage.universal`
-
-- `docker build -t myogr/dbt:0.21 --build-arg VERSION='0.21.1' --build-arg PLUGINS='bigquery snowflake,redshift' - < ~/Projects/Docker/dbt/Dockerfile.multistage.universal`
-
-Just grab Dockerfile and build desired version and/or plugins list as build parametes.
-If no parameters will be passed into the build then image will be built using latest release version from [this page](https://github.com/dbt-labs/dbt-core/releases/latest) and following components:
-- DBT version before 1.0.0 - DBT core + BigQuery + Snowflake + Redshift + Postgres
-- DBT version 1.0.0 and  after - DBT core only
-
-
-Version list can be found on [DBT-labs GitHub](https://github.com/dbt-labs/dbt-core/tags) repo.
-
-Plugins list can be found in [DBT documentation](https://docs.getdbt.com/docs/available-adapters) site.
-Please use plugin name from **Install from PyPi** section (without `dbt-` prefix) to pass it as a build argument
-
-## Important notice
-To avoid auto-downgrading of DBT-core version during outdated plugin installation, I've added strict condition that plugin's version must be equal to version of DBT-core.
+Look into ![build script](https://github.com/xemuliam/docker-dbt/blob/main/buildx.sh)
 
 
 # Enjoy! :)
