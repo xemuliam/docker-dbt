@@ -83,6 +83,7 @@ I've additionaly prepared three spins dedicated to main cloud datawarehouses sup
 - [Google BigQuery](https://cloud.google.com/bigquery)
 - [Snowflake](https://www.snowflake.com/cloud-data-platform/)
 - [Amazon Redshift](https://aws.amazon.com/redshift)
+- [Azure Synapse](azure.microsoft.com/products/synapse-analytics)
 
 
 And those spins are really tiny!
