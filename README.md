@@ -11,7 +11,7 @@ Since version 1.0.0 my images are optimized for two different architectures: **A
 
 ========
 
-Also please be informed that **since DBT version 1.7.8, the tagging for my images have been changed**.
+Also please be informed that **since DBT version 1.7.8, the tagging for my images has been changed**.
 
 Now the fully qualified tag looks like this:
 ```
