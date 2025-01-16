@@ -25,10 +25,11 @@ Please take that into account to avoid any misleading
 
 ## Latest Spins
 
-- ![Docker Image Version (tag latest semver)](https://img.shields.io/docker/v/xemuliam/dbt/bigquery?label=BigQuery&color=blue&logo=googlebigquery&logoColor=white) ![Docker Image Size (tag)](https://img.shields.io/docker/image-size/xemuliam/dbt/bigquery?color=blue)    __= 1.8-bigquery = bigquery__
-- ![Docker Image Version (tag latest semver)](https://img.shields.io/docker/v/xemuliam/dbt/snowflake?label=Snowflake&color=lightblue&logo=snowflake&logoColor=white) ![Docker Image Size (tag)](https://img.shields.io/docker/image-size/xemuliam/dbt/snowflake?color=lightblue)   __= 1.8-snowflake = snowflake__
-- ![Docker Image Version (tag latest semver)](https://img.shields.io/docker/v/xemuliam/dbt/redshift?label=Redshift&color=orange&logo=amazonredshift&logoColor=white) ![Docker Image Size (tag)](https://img.shields.io/docker/image-size/xemuliam/dbt/redshift?color=orange)   __= 1.8-redshift = redshift__
-- ![Docker Image Version (tag latest semver)](https://img.shields.io/docker/v/xemuliam/dbt/synapse?label=Synapse&color=brightgreen&logo=azuredataexplorer&logoColor=white) ![Docker Image Size (tag)](https://img.shields.io/docker/image-size/xemuliam/dbt/synapse?color=brightgreen)   __= 1.8-synapse = synapse__
+- ![Docker Image Version (tag latest semver)](https://img.shields.io/docker/v/xemuliam/dbt/bigquery?label=BigQuery&color=blue&logo=googlebigquery&logoColor=white) ![Docker Image Size (tag)](https://img.shields.io/docker/image-size/xemuliam/dbt/bigquery?color=blue)    __= 1.9-bigquery = bigquery__
+- ![Docker Image Version (tag latest semver)](https://img.shields.io/docker/v/xemuliam/dbt/snowflake?label=Snowflake&color=lightblue&logo=snowflake&logoColor=white) ![Docker Image Size (tag)](https://img.shields.io/docker/image-size/xemuliam/dbt/snowflake?color=lightblue)   __= 1.9-snowflake = snowflake__
+- ![Docker Image Version (tag latest semver)](https://img.shields.io/docker/v/xemuliam/dbt/databricks?label=Databricks&color=red&logo=databricks&logoColor=white) ![Docker Image Size (tag)](https://img.shields.io/docker/image-size/xemuliam/dbt/databricks?color=red)   __= 1.9-databricks = databricks__
+- ![Docker Image Version (tag latest semver)](https://img.shields.io/docker/v/xemuliam/dbt/redshift?label=Redshift&color=orange&logo=amazonredshift&logoColor=white) ![Docker Image Size (tag)](https://img.shields.io/docker/image-size/xemuliam/dbt/redshift?color=orange)   __= 1.9-redshift = redshift__
+- ![Docker Image Version (tag latest semver)](https://img.shields.io/docker/v/xemuliam/dbt/synapse?label=Synapse&color=brightgreen&logo=azuredataexplorer&logoColor=white) ![Docker Image Size (tag)](https://img.shields.io/docker/image-size/xemuliam/dbt/synapse?color=brightgreen)   __= 1.9-synapse = synapse__
 
 ## Full
 <details><summary>Click to expand</summary>
@@ -79,9 +80,10 @@ DBT supports several plugins and full docker image contains all of them.
 
 However in most of cases we don't use such stuff because of technological lanscape in our work. Thus you don't need to work with unnecessary plugins and fuctionality.
 
-I've additionaly prepared three spins dedicated to main cloud datawarehouses supported by DBT (all other plugins have been removed at build stage):
+I've additionaly prepared several spins dedicated to main cloud datawarehouses supported by DBT (all other plugins have been removed at build stage):
 - [Google BigQuery](https://cloud.google.com/bigquery)
 - [Snowflake](https://www.snowflake.com/cloud-data-platform/)
+- [Databricks](https://www.databricks.com/product/data-intelligence-platform)
 - [Amazon Redshift](https://aws.amazon.com/redshift)
 - [Azure Synapse](azure.microsoft.com/products/synapse-analytics)
 
