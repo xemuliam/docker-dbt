@@ -38,7 +38,7 @@ Please take that into account to avoid any misleading
 
 __I decided to stop maintaining full version of image because of version mixing for each of plugins__
 
-- ![Docker Image Version (tag latest semver)](https://img.shields.io/docker/v/xemuliam/dbt/latest?color=brightgreen) ![Docker Image Size (tag)](https://img.shields.io/docker/image-size/xemuliam/dbt/latest?color=brightgreen)   __= 1.6__
+- ![Docker Image Version (tag latest semver)](https://img.shields.io/docker/v/xemuliam/dbt/1.6?color=brightgreen) ![Docker Image Size (tag)](https://img.shields.io/docker/image-size/xemuliam/dbt/1.6?color=brightgreen)   __= 1.6__
 - ![Docker Image Version (tag latest semver)](https://img.shields.io/docker/v/xemuliam/dbt/1.5?color=yellowgreen) ![Docker Image Size (tag)](https://img.shields.io/docker/image-size/xemuliam/dbt/1.5?color=yellowgreen)   __= 1.5__
 - ![Docker Image Version (tag latest semver)](https://img.shields.io/docker/v/xemuliam/dbt/1.4?color=yellow) ![Docker Image Size (tag)](https://img.shields.io/docker/image-size/xemuliam/dbt/1.4?color=yellow)   __= 1.4__
 - ![Docker Image Version (tag latest semver)](https://img.shields.io/docker/v/xemuliam/dbt/1.3?color=orange) ![Docker Image Size (tag)](https://img.shields.io/docker/image-size/xemuliam/dbt/1.3?color=orange)    __= 1.3__
