@@ -22,7 +22,13 @@ xemuliam/dbt:1.7.8-bigquery1.7.5
 Please take that into account to avoid any misleading
 
 
+## DBT Fusion engine
+
+- ![Docker Image Version (tag latest semver)](https://img.shields.io/docker/v/xemuliam/dbt/fusion?label=dbt-fusion&color=red&logoColor=white) ![Docker Image Size (tag)](https://img.shields.io/docker/image-size/xemuliam/dbt/fusion?color=red)    __= 2.0-fusion = fusion__
+
+
 ## Latest Spins
+
 
 - ![Docker Image Version (tag latest semver)](https://img.shields.io/docker/v/xemuliam/dbt/duckdb?label=DuckDB&color=yellow&logo=duckdb&logoColor=white) ![Docker Image Size (tag)](https://img.shields.io/docker/image-size/xemuliam/dbt/duckdb?color=yellow)    __= 1.10-duckdb = duckdb__
 - ![Docker Image Version (tag latest semver)](https://img.shields.io/docker/v/xemuliam/dbt/bigquery?label=BigQuery&color=blue&logo=googlebigquery&logoColor=white) ![Docker Image Size (tag)](https://img.shields.io/docker/image-size/xemuliam/dbt/bigquery?color=blue)    __= 1.10-bigquery = bigquery__
