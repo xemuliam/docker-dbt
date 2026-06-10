@@ -1,0 +1,16 @@
+FROM        debian:bookworm-slim
+ENV         DBT_HOME=/usr/app
+RUN         mkdir -p ${DBT_HOME} && \
+            apt-get update && \
+            apt-get install -y --no-install-recommends \
+              curl \
+              git && \
+            apt-get clean && \
+            rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/* && \
+            # curl -fsSL https://public.cdn.getdbt.com/fs/install/install.sh | sh -s -- --update; \
+            curl -kfsSL https://public.cdn.getdbt.com/fs/install/install.sh | sed 's/curl -s/curl -ks/g' | sh -s -- --update; \
+            echo $?; sleep 2; \
+            if [ $? -ne 0 ] && [ $? -ne 2 ]; then exit 1; fi && \
+            ln -s /root/.local/bin/dbt /usr/local/bin/dbt
+WORKDIR     ${DBT_HOME}
+CMD         ["dbt", "--version"]

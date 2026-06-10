@@ -1,7 +1,13 @@
-FROM        python:3.11-slim AS base
+FROM        python:3.12-slim-bookworm AS base
 ENV         DBT_HOME=/usr/app \
             PYTHONIOENCODING=utf-8
-RUN         pip install --no-cache-dir --upgrade pip
+RUN         pwd && \
+            apt-get update && \
+            apt-get install -y --no-install-recommends \
+              git && \
+            apt-get clean && \
+            rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/* && \
+            pip install --no-cache-dir --upgrade pip
 
 FROM        base AS snake
 RUN         apt-get update && \
