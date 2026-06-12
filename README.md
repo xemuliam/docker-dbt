@@ -1,4 +1,4 @@
-![dbt-logo](https://camo.githubusercontent.com/d2d10c9617d14cfc84e7511ce20d95c68000b281b4dcca48e12e3f744a03b1a8/68747470733a2f2f696d6775722e636f6d2f724770627770482e706e67)
+![dbt-logo](https://imgur.com/rGpbwpH.png)
 
 # DBT   ![Docker Pulls](https://img.shields.io/docker/pulls/xemuliam/dbt?social)
 
@@ -30,13 +30,13 @@ Please take that into account to avoid any misleading
 ## Latest Spins
 
 
-- ![Docker Image Version (tag latest semver)](https://img.shields.io/docker/v/xemuliam/dbt/duckdb?label=DuckDB&color=yellow&logo=duckdb&logoColor=white) ![Docker Image Size (tag)](https://img.shields.io/docker/image-size/xemuliam/dbt/duckdb?color=yellow)    __= 1.10-duckdb = duckdb__
-- ![Docker Image Version (tag latest semver)](https://img.shields.io/docker/v/xemuliam/dbt/bigquery?label=BigQuery&color=blue&logo=googlebigquery&logoColor=white) ![Docker Image Size (tag)](https://img.shields.io/docker/image-size/xemuliam/dbt/bigquery?color=blue)    __= 1.10-bigquery = bigquery__
-- ![Docker Image Version (tag latest semver)](https://img.shields.io/docker/v/xemuliam/dbt/snowflake?label=Snowflake&color=lightblue&logo=snowflake&logoColor=white) ![Docker Image Size (tag)](https://img.shields.io/docker/image-size/xemuliam/dbt/snowflake?color=lightblue)   __= 1.10-snowflake = snowflake__
-- ![Docker Image Version (tag latest semver)](https://img.shields.io/docker/v/xemuliam/dbt/databricks?label=Databricks&color=red&logo=databricks&logoColor=white) ![Docker Image Size (tag)](https://img.shields.io/docker/image-size/xemuliam/dbt/databricks?color=red)   __= 1.10-databricks = databricks__
-- ![Docker Image Version (tag latest semver)](https://img.shields.io/docker/v/xemuliam/dbt/redshift?label=Redshift&color=orange&logo=amazonredshift&logoColor=white) ![Docker Image Size (tag)](https://img.shields.io/docker/image-size/xemuliam/dbt/redshift?color=orange)   __= 1.10-redshift = redshift__
-- ![Docker Image Version (tag latest semver)](https://img.shields.io/docker/v/xemuliam/dbt/athena?label=Athena&color=red&logo=amazonathena&logoColor=white) ![Docker Image Size (tag)](https://img.shields.io/docker/image-size/xemuliam/dbt/athena?color=red)   __= 1.10-athena = athena__
-- ![Docker Image Version (tag latest semver)](https://img.shields.io/docker/v/xemuliam/dbt/synapse?label=Synapse&color=brightgreen&logo=azuredataexplorer&logoColor=white) ![Docker Image Size (tag)](https://img.shields.io/docker/image-size/xemuliam/dbt/synapse?color=brightgreen)   __= 1.10-synapse = synapse__
+- ![Docker Image Version (tag latest semver)](https://img.shields.io/docker/v/xemuliam/dbt/duckdb?label=DuckDB&color=yellow&logo=duckdb&logoColor=white) ![Docker Image Size (tag)](https://img.shields.io/docker/image-size/xemuliam/dbt/duckdb?color=yellow)    __= 1.11-duckdb = duckdb__
+- ![Docker Image Version (tag latest semver)](https://img.shields.io/docker/v/xemuliam/dbt/bigquery?label=BigQuery&color=blue&logo=googlebigquery&logoColor=white) ![Docker Image Size (tag)](https://img.shields.io/docker/image-size/xemuliam/dbt/bigquery?color=blue)    __= 1.11-bigquery = bigquery__
+- ![Docker Image Version (tag latest semver)](https://img.shields.io/docker/v/xemuliam/dbt/snowflake?label=Snowflake&color=lightblue&logo=snowflake&logoColor=white) ![Docker Image Size (tag)](https://img.shields.io/docker/image-size/xemuliam/dbt/snowflake?color=lightblue)   __= 1.11-snowflake = snowflake__
+- ![Docker Image Version (tag latest semver)](https://img.shields.io/docker/v/xemuliam/dbt/databricks?label=Databricks&color=red&logo=databricks&logoColor=white) ![Docker Image Size (tag)](https://img.shields.io/docker/image-size/xemuliam/dbt/databricks?color=red)   __= 1.11-databricks = databricks__
+- ![Docker Image Version (tag latest semver)](https://img.shields.io/docker/v/xemuliam/dbt/redshift?label=Redshift&color=orange&logo=amazonredshift&logoColor=white) ![Docker Image Size (tag)](https://img.shields.io/docker/image-size/xemuliam/dbt/redshift?color=orange)   __= 1.11-redshift = redshift__
+- ![Docker Image Version (tag latest semver)](https://img.shields.io/docker/v/xemuliam/dbt/athena?label=Athena&color=red&logo=amazonathena&logoColor=white) ![Docker Image Size (tag)](https://img.shields.io/docker/image-size/xemuliam/dbt/athena?color=red)   __= 1.11-athena = athena__
+- ![Docker Image Version (tag latest semver)](https://img.shields.io/docker/v/xemuliam/dbt/synapse?label=Synapse&color=brightgreen&logo=azuredataexplorer&logoColor=white) ![Docker Image Size (tag)](https://img.shields.io/docker/image-size/xemuliam/dbt/synapse?color=brightgreen)   __= 1.11-synapse = synapse__
 
 ## Full
 <details><summary>Click to expand</summary>
